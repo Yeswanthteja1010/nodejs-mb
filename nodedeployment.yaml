@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: nodembdep
+  name: nodembdep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodembdep
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nodembdep
+    spec:
+      containers:
+      - image: yeswanthteja/nodemb
+        name: nodemb
+        resources: {}
+status: {}
