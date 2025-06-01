@@ -3,7 +3,7 @@ agent any
 stages{
 stage('clone the repo'){
 steps{
-sh 'checkout scm'				}
+checkout scm				
 }
 }
 
@@ -21,6 +21,7 @@ sh 'docker push yeswanthteja/nodemb'
 }
 }
 }
+  
 stage('deploy'){
 when{
 branch 'main'
