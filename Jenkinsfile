@@ -38,8 +38,8 @@ branch 'main'
 }
 steps{
 withCredentials([file(credentialsId: 'kubernetes', variable: 'KUBECONFIG')]) {
-//sh 'kubectl apply -f nodeservice.yaml'
-echo 'service'
+sh 'kubectl apply -f nodeservice.yaml'
+//echo 'service'
 }
 }
 }
