@@ -3,7 +3,7 @@ agent any
 stages{
 stage('clone the repo'){
 steps{
-sh 'checkout scm'				}
+checkout scm
 }
 }
 
